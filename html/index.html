@@ -20,8 +20,8 @@
             </span>
         </a>        
         <div class="form-wrap invest">
-            <div class="form-row">
-                <input type="text" value="51368" placeholder="000000">
+            <div class="form-row principalVal">
+                <input type="text" name="principalVal"  placeholder="000000">
             </div>
             <div class="form-row switch">
                 <span>Yearly</span>
@@ -34,7 +34,7 @@
         </div>
         <div class="form-wrap interest">
             <div class="form-row">
-                <input type="text" placeholder="000">
+                <input type="text" name="intRate" placeholder="000">
             </div>
             <div class="form-row">
                 <p>Per annum</p>
@@ -42,16 +42,37 @@
         </div>
         <div class="form-wrap time">
             <div class="form-row">
-                <input type="text" placeholder="10">
+                <input type="text" name="years" placeholder="10">
             </div>
             <div class="form-row">
                 <p>Yearly</p>
             </div>
         </div>
-        <h2 class="result">900000</h2>
+        <h2 class="result"></h2>
     </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/lib.js"></script>
+<script language="JavaScript">
+    $(document).ready(function() {
+      $('input').each(function() {
+        $('input').keypress(function() {
+        var presentVal = parseFloat($("input[name=principalVal]").val());       
+        var intRate = parseFloat($("input[name=intRate]").val())/100;       
+        var years = parseFloat($("input[name=years]").val()); 
+         var futureVal = presentVal * Math.pow((1.0+intRate),years);     
+        var totalInt = futureVal - presentVal;
+        console.log(totalInt);
+         futureVal = Math.round(futureVal*100.0)/100.0;
+         totalInt = Math.round(totalInt*100.0)/100.0;
+         console.log(futureVal);
+        console.log(totalInt);
+        $(".result").html(futureVal);
+        //$("input[name=totalInt]").val(totalInt);
+
+});
+});
+});
+</script>
 </body>
 </html>
