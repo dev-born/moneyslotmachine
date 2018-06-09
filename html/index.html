@@ -11,14 +11,14 @@
 <div class="wrapper">
     <img src="img/moneyslot.png" alt="">
     <div class="container">
-        <a href="javascript:;" class="spinner">
+        <p   class="spinner">
             <span>
                 <img src="img/spin-bg.png" alt="">
             </span>
-            <span class="spin-handle">
+            <span  class="spin-handle" >
                 <img src="img/spin-handle.png" alt="">
             </span>
-        </a>        
+        </p>        
         <div class="form-wrap invest">
             <div class="form-row principalVal">
                 <input type="text" name="principalVal"  placeholder="000000">
@@ -26,10 +26,10 @@
             <div class="form-row switch">
                 <span>Yearly</span>
                 <div class="switch-toggle">
-                    <span class="active">Y</span>
-                    <span>M</span>
+                    <span class="year active">Y</span>
+                    <span class="month">M</span>
                 </div>
-                <span>Monthly</span>
+                <span style="color: #663333;">Monthly</span>
             </div>
         </div>
         <div class="form-wrap interest">
@@ -45,34 +45,54 @@
                 <input type="text" name="years" placeholder="10">
             </div>
             <div class="form-row">
-                <p>Yearly</p>
+                <p class="timeperiod"><span class="year active">Yearly</span> <span class="month">Monthly</span> </p>
+                
             </div>
         </div>
-        <h2 class="result"></h2>
+        <h2 class="result"></h2> 
+        <div class="statement">
+              
+        </div>       
     </div>
+    
+
+
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/lib.js"></script>
-<script language="JavaScript">
-    $(document).ready(function() {
-      $('input').each(function() {
-        $('input').keypress(function() {
-        var presentVal = parseFloat($("input[name=principalVal]").val());       
-        var intRate = parseFloat($("input[name=intRate]").val())/100;       
-        var years = parseFloat($("input[name=years]").val()); 
-         var futureVal = presentVal * Math.pow((1.0+intRate),years);     
-        var totalInt = futureVal - presentVal;
-        console.log(totalInt);
-         futureVal = Math.round(futureVal*100.0)/100.0;
-         totalInt = Math.round(totalInt*100.0)/100.0;
-         console.log(futureVal);
-        console.log(totalInt);
-        $(".result").html(futureVal);
-        //$("input[name=totalInt]").val(totalInt);
 
+<script >
+
+$(document).ready(function() {
+    console.log("totalInt");
+    $('.spinner,.spinner span').click(function() {          
+    console.log("totalInt");
+        $('input').each(function() { 
+
+        if($('input').val()!= 0){
+            var presentVal = parseFloat($("input[name=principalVal]").val());       
+            var intRate = parseFloat($("input[name=intRate]").val())/100;       
+            var years = parseFloat($("input[name=years]").val());   
+            var futureVal = presentVal * Math.pow((1.0+intRate),years);     
+            var totalInt = futureVal - presentVal;
+            console.log(totalInt);
+            futureVal = Math.round(futureVal*100.0)/100.0;
+            totalInt = Math.round(totalInt*100.0)/100.0;
+            console.log(futureVal);
+            console.log(totalInt);
+            $(".result").html(futureVal);
+            $("input[name=totalInt]").val(totalInt);
+            $(".statement ").html("<div class='wow'>WoW!</div><div>LOOK AT WHAT<br>YOU CAN MAKE</div>");
+        }
+        else{
+            $(".statement ").html(''); 
+        }
+
+
+        });
+    });
 });
-});
-});
+
 </script>
 </body>
 </html>

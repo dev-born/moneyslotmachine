@@ -6,10 +6,9 @@ img {max-width: 100%;height:auto;vertical-align: middle}
 .form-wrap {margin: 33% auto 0;text-align: center;max-width: 234px;padding: 10px 15px;}
 .form-row {padding: 5px 0;text-align: right;}
 input[type="text"] {background: #efb923;border: none;text-align: right;width: 100%;line-height: 1;font: Bold 50px fantasy;padding:0 8px}
-input[type="text"]
-.form-wrap.interest {margin-top:29%}
+.form-wrap.interest {margin-top:27%}
 .form-wrap.time {margin-top:28%}
-.form-row p {color: #efb923;font: bold 17px Arial;}
+.form-row p {color: #ffcc33;font: bold 17px Arial;}
 .result {margin: 25% 0 0;text-align: center;padding: 10px;font: bold 60px fantasy;letter-spacing: 5px;}
 .spinner {position: absolute;right: -44px;top: 50%;}
 .spinner img{max-width: none}
@@ -30,10 +29,37 @@ input[type="text"]
     padding: 0 5px;
     cursor: pointer;
 }
-.switch-toggle .active {
-    background: #666;
-    color: #EFB923;
+.switch-toggle span{
+        background: #000;
+    color: #663333;
 }
+.switch-toggle span.active {
+    background: #ffcc33;
+    color: #000;
+}
+.timeperiod .year,.timeperiod .month{
+    display: none;
+}
+.timeperiod .year.active,.timeperiod .month.active{
+    display: block;
+}
+.form-wrap interest p{
+    color: #cc9933;
+}
+.statement {
+    color: #fff;
+    font-size: 30px;
+        margin-top: 51px;
+}
+.statement div{
+width: 43%;
+    display: inline-block;
+    font-size: 26px;
+}
+.statement div.wow{
+        font-size: 80px;
+    text-align: right;
+} 
 /*.form-wrap.invest,.form-wrap.interest,.form-wrap.time{
     position: relative;
 }
@@ -45,7 +71,7 @@ position: absolute;
 }
 .form-wrap.time .form-row{
 position: absolute;
-}*/
+}*//*
 @media screen and (max-width: 1024px){
     .form-wrap.interest {
     margin-top: 28%;
@@ -78,9 +104,9 @@ input[type="text"]{
 .form-wrap.invest{
     margin-top: 28%;
 }
-/*input[type="text"]{
+input[type="text"]{
     font: Bold 36px fantasy;
-}*/
+}
 }
 @media screen and (max-width: 880px){
     .form-wrap.interest {
@@ -114,4 +140,4 @@ input[type="text"]{
 .form-wrap.invest{
     margin-top: 20%;
 }
-}
+}*/
