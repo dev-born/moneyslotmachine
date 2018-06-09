@@ -14,3 +14,22 @@ input[type="text"] {background: #efb923;border: none;text-align: right;width: 10
 .spinner img{max-width: none}
 .spin-handle {position: absolute;left: 9%;top: -68%;}
 .spinner:active .spin-handle {position: absolute;left: -51%;top: 70%;transform: rotateZ(-210deg);}
+.form-row.switch > * {
+    display: inline-block;
+    color: #EFB923;
+    font: bold 18px Arial;
+    vertical-align: middle;
+    padding: 2px;
+}
+.switch-toggle {
+    background: #EFB923;
+}
+.switch-toggle > * {
+    color: #000;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.switch-toggle .active {
+    background: #666;
+    color: #EFB923;
+}

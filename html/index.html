@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Money Slot Machine</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -22,8 +23,13 @@
             <div class="form-row">
                 <input type="text" value="51368" placeholder="000000">
             </div>
-            <div class="form-row">
-                <p>Yearly</p>
+            <div class="form-row switch">
+                <span>Yearly</span>
+                <div class="switch-toggle">
+                    <span class="active">Y</span>
+                    <span>M</span>
+                </div>
+                <span>Monthly</span>
             </div>
         </div>
         <div class="form-wrap interest">
@@ -45,5 +51,7 @@
         <h2 class="result">900000</h2>
     </div>
 </div>
+
+<script src="js/lib.js"></script>
 </body>
 </html>
