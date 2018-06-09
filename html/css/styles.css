@@ -49,15 +49,17 @@ input[type="text"] {background: #efb923;border: none;text-align: right;width: 10
 .statement {
     color: #fff;
     font-size: 30px;
-        margin-top: 51px;
+    margin-top: 51px;
+        text-align: center;
 }
 .statement div{
 width: 43%;
     display: inline-block;
     font-size: 26px;
+    font-family:  Arial;
 }
 .statement div.wow{
-        font-size: 80px;
+        font-size: 66px;
     text-align: right;
 } 
 /*.form-wrap.invest,.form-wrap.interest,.form-wrap.time{

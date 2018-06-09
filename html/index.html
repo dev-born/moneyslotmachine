@@ -45,7 +45,9 @@
                 <input type="text" name="years" placeholder="10">
             </div>
             <div class="form-row">
-                <p class="timeperiod"><span class="year active">Yearly</span> <span class="month">Monthly</span> </p>
+                <p class="timeperiod">
+                    <span class="year active">Yearly</span>
+                 <span class="month">Monthly</span> </p>
                 
             </div>
         </div>
@@ -65,7 +67,7 @@
 
 $(document).ready(function() {
     console.log("totalInt");
-    $('.spinner,.spinner span').click(function() {          
+    $('.spinner,.spinner span,.spinner img').click(function() {          
     console.log("totalInt");
         $('input').each(function() { 
 
@@ -82,7 +84,10 @@ $(document).ready(function() {
             console.log(totalInt);
             $(".result").html(futureVal);
             $("input[name=totalInt]").val(totalInt);
-            $(".statement ").html("<div class='wow'>WoW!</div><div>LOOK AT WHAT<br>YOU CAN MAKE</div>");
+            $(".statement ").html("<div class='wow'>WOW!</div><div>LOOK AT WHAT<br>YOU CAN MAKE</div>");
+            $('html, body').animate({
+            scrollTop: $('.wow').offset().top
+            }, 1000);
         }
         else{
             $(".statement ").html(''); 
