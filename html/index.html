@@ -21,20 +21,20 @@
         </p>        
         <div class="form-wrap invest">
             <div class="form-row principalVal">
-                <input type="text" name="principalVal"  placeholder="000000">
+                <input type="number" name="principalVal"  placeholder="000000" class="calc-input">
             </div>
             <div class="form-row switch">
-                <span>Yearly</span>
+                <span class="active">Yearly</span>
                 <div class="switch-toggle">
-                    <span class="year active">Y</span>
-                    <span class="month">M</span>
+                    <span class="year active" data-val="Yearly">Y</span>
+                    <span class="month" data-val="Monthly">M</span>
                 </div>
-                <span style="color: #663333;">Monthly</span>
+                <span>Monthly</span>
             </div>
         </div>
         <div class="form-wrap interest">
             <div class="form-row">
-                <input type="text" name="intRate" placeholder="000">
+                <input type="number" name="intRate" placeholder="000" class="calc-input">
             </div>
             <div class="form-row">
                 <p>Per annum</p>
@@ -42,13 +42,13 @@
         </div>
         <div class="form-wrap time">
             <div class="form-row">
-                <input type="text" name="years" placeholder="10">
+                <input type="number" name="years" placeholder="10" class="calc-input">
             </div>
             <div class="form-row">
                 <p class="timeperiod">
                     <span class="year active">Yearly</span>
-                 <span class="month">Monthly</span> </p>
-                
+                    <span class="month">Monthly</span>
+                </p>                
             </div>
         </div>
         <h2 class="result"></h2> 
@@ -66,36 +66,7 @@
 <script >
 
 $(document).ready(function() {
-    console.log("totalInt");
-    $('.spinner,.spinner span,.spinner img').click(function() {          
-    console.log("totalInt");
-        $('input').each(function() { 
-
-        if($('input').val()!= 0){
-            var presentVal = parseFloat($("input[name=principalVal]").val());       
-            var intRate = parseFloat($("input[name=intRate]").val())/100;       
-            var years = parseFloat($("input[name=years]").val());   
-            var futureVal = presentVal * Math.pow((1.0+intRate),years);     
-            var totalInt = futureVal - presentVal;
-            console.log(totalInt);
-            futureVal = Math.round(futureVal*100.0)/100.0;
-            totalInt = Math.round(totalInt*100.0)/100.0;
-            console.log(futureVal);
-            console.log(totalInt);
-            $(".result").html(futureVal);
-            $("input[name=totalInt]").val(totalInt);
-            $(".statement ").html("<div class='wow'>WOW!</div><div>LOOK AT WHAT<br>YOU CAN MAKE</div>");
-            $('html, body').animate({
-            scrollTop: $('.wow').offset().top
-            }, 1000);
-        }
-        else{
-            $(".statement ").html(''); 
-        }
-
-
-        });
-    });
+    
 });
 
 </script>
