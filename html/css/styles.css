@@ -17,7 +17,7 @@ input[type="number"] {background:url(../img/input-bg.png) no-repeat center;borde
 .form-wrap.time {margin-top:28%}
 .form-row p {color: #ffcc33;font: bold 17px Arial;}
 .result {margin: 25% 0 0;text-align: center;padding: 10px;font: bold 60px fantasy;letter-spacing: 5px;}
-.spinner {position: absolute;right: -44px;top: 50%;}
+.spinner {position: absolute;right: -44px;top: 50%;transform:translateY(-50%)}
 .spinner img{max-width: none}
 .spin-handle {position: absolute;left: 9%;top: -68%;}
 .spinner:active .spin-handle {position: absolute;left: -51%;top: 70%;transform: rotateZ(-210deg);}
