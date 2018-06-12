@@ -5,7 +5,7 @@ $(function(){
         var text = $(this).data('val');
         $(".switch > span:contains("+text+")").addClass("active").siblings().removeClass("active")
     });
-    $('.spinner').click(function(e) {
+    $('.spinner,.spin-handle,.spin-handle img').click(function(e) {
         var inputNotEmpty = true;
         var presentVal,intRate,years,futureVal,totalInt;
         $('input').each(function() { 
@@ -31,7 +31,14 @@ $(function(){
             $("input[name=totalInt]").val(totalInt);
             $(".statement ").html("<div class='wow'>WOW!</div><div>LOOK AT WHAT<br>YOU CAN MAKE</div>");
             $('html, body').animate({scrollTop: $('.wow').offset().top}, 1000);
+            $('.form-reset').css('margin-top','4%');
+            $('.spinner').addClass('active');
         }
+    });
+    $('#clear-form').on('click', function()    {
+        $('.form-row').find('input').val('');
+        $('.result,.statement').html(''); 
+        $('.form-reset').css('margin-top','26%');     
     });
     
 });
