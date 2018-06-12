@@ -12,11 +12,12 @@ img {max-width: 100%;height:auto;vertical-align: middle}
 .container {width: 500px;max-width:100%;margin:auto;position:absolute;top:22%;left:50%;transform:translateX(-50%)}
 .form-wrap {margin: 33% auto 0;text-align: center;max-width: 234px;padding: 10px 6px;}
 .form-row {padding: 5px 0;text-align: right;position: relative}
-input[type="number"] {background:url(../img/input-bg.png) no-repeat center;border: none;text-align: right;width: 100%;line-height: 1;font: Bold 50px fantasy;padding:0;letter-spacing: .16em;}
+input[type="number"] {background:url(../img/input-bg.png) no-repeat center;border: none;text-align: right;width: 100%;line-height: 1;font: Bold 50px fantasy;padding:0;letter-spacing: .16em;-moz-appearance: textfield;}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+  -moz-appearance: textfield;
 }
 .form-wrap.interest {margin-top:27%}
 .form-wrap.time {margin-top:28%}
