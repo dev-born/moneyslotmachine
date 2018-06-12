@@ -23,7 +23,7 @@ $(function(){
             futureVal = presentVal * Math.pow((1.0+intRate),years);     
             totalInt = futureVal - presentVal;
             console.log(totalInt);
-            futureVal = Math.round(futureVal*100.0)/100.0;
+            futureVal = Math.round(futureVal*100.0)/100.0;   
             totalInt = Math.round(totalInt*100.0)/100.0;
             console.log(futureVal);
             console.log(totalInt);           
