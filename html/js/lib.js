@@ -15,7 +15,7 @@ $(function(){
         });
         if(inputNotEmpty == false) {
             e.preventDefault();
-            alert("Please fill all fields")
+            alert("Please fill all fields");
         }else {
             presentVal = parseFloat($("input[name=principalVal]").val());       
             intRate = parseFloat($("input[name=intRate]").val())/100;       

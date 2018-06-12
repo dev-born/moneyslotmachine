@@ -22,7 +22,7 @@ input[type=number]::-webkit-outer-spin-button {
 .form-wrap.time {margin-top:28%}
 .form-row p {color: #ffcc33;font: bold 17px Arial;}
 .result {margin: 25% 0 0;text-align: center;padding: 10px;font: bold 60px fantasy;letter-spacing: 5px;}
-.spinner {position: absolute;right: -44px;top: 32%;/*transform:translateY(-50%)*/;cursor:pointer}
+.spinner {position: absolute;right: -44px;top: 32%;cursor:pointer}
 .spinner img{max-width: none}
 .spin-handle {position: absolute;left: 9%;top: -68%;}
 /*.spinner .spin-handle.active {position: absolute;left: -51%;bottom: 70%;transform: rotateZ(-210deg);}*/
@@ -46,27 +46,7 @@ input[type=number]::-webkit-outer-spin-button {
     top: -152px;
     
      }
-    /*divs {
-    width: 100px;
-    height: 100px;
-    background: red;
-    position: relative;
-    -webkit-animation: mymove 5s infinite;
-    -webkit-animation-timing-function: linear; 
-    animation: mymove 5s infinite;
-    animation-timing-function: linear;
-}*/
-
-/* Safari 4.0 - 8.0 */
-/*@-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 200px;}
-}
-
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 200px;}
-}*/
+    
 .form-row.switch > span {color: #58471a}
 .form-row.switch > span.active {color: #EFB923}
 .switch-toggle {
@@ -125,84 +105,3 @@ width: 43%;
     border-radius: 20px;
     font-family: fantasy;
 }
-/*.form-wrap.invest,.form-wrap.interest,.form-wrap.time{
-    position: relative;
-}
-.form-wrap.invest .form-row{
-position: absolute;
-}
-.form-wrap.interest .form-row{
-position: absolute;
-}
-.form-wrap.time .form-row{
-position: absolute;
-}*//*
-@media screen and (max-width: 1024px){
-    .form-wrap.interest {
-    margin-top: 28%;
-}
-.form-wrap.time {
-    margin-top: 28%;
-}
-}
-@media screen and (max-width: 991px){
-    .form-wrap.interest {
-    margin-top: 26%;
-}
-.form-wrap.time {
-    margin-top: 28%;
-}
-.form-wrap.invest{
-    margin-top: 32%;
-}
-input[type="text"]{
-    font: Bold 4vw fantasy;
-}
-}
-@media screen and (max-width: 930px){
-    .form-wrap.interest {
-    margin-top: 27%;
-}
-.form-wrap.time {
-    margin-top: 24%;
-}
-.form-wrap.invest{
-    margin-top: 28%;
-}
-input[type="text"]{
-    font: Bold 36px fantasy;
-}
-}
-@media screen and (max-width: 880px){
-    .form-wrap.interest {
-    margin-top: 23%;
-}
-.form-wrap.time {
-    margin-top: 24%;
-}
-.form-wrap.invest{
-    margin-top: 26%;
-}
-}
-@media screen and (max-width: 830px){
-    .form-wrap.interest {
-    margin-top: 20%;
-}
-.form-wrap.time {
-    margin-top: 20%;
-}
-.form-wrap.invest{
-    margin-top: 24%;
-}
-}
-@media screen and (max-width: 767px){
-      .form-wrap.interest {
-    margin-top: 18%;
-}
-.form-wrap.time {
-    margin-top: 19%;
-}
-.form-wrap.invest{
-    margin-top: 20%;
-}
-}*/
