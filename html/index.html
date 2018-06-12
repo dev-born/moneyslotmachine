@@ -13,15 +13,16 @@
     <div class="container">
         <p   class="spinner">
             <span>
-                <img src="img/spin-bg.png" alt="">
+                <img class="spin-bg" src="img/spin-bg.png" alt="">
             </span>
             <span  class="spin-handle" >
-                <img src="img/spin-handle.png" alt="">
+                <img class="spinimg"src="img/spin-handle.png" alt="">
+                <img class="spinimg-hand"src="img/spins-hand.gif" alt="">
             </span>
         </p>        
         <div class="form-wrap invest">
             <div class="form-row principalVal">
-                <input type="number" name="principalVal"  placeholder="000000" class="calc-input">
+                <input type="number" name="principalVal"  placeholder="000000" class="calc-input"  >
             </div>
             <div class="form-row switch">
                 <span class="active">Yearly</span>
@@ -34,7 +35,7 @@
         </div>
         <div class="form-wrap interest">
             <div class="form-row">
-                <input type="number" name="intRate" placeholder="000" class="calc-input">
+                <input type="number" name="intRate" placeholder="000" class="calc-input" >
             </div>
             <div class="form-row">
                 <p>Per annum</p>
@@ -42,7 +43,7 @@
         </div>
         <div class="form-wrap time">
             <div class="form-row">
-                <input type="number" name="years" placeholder="10" class="calc-input">
+                <input type="number" name="years" placeholder="10" class="calc-input" >
             </div>
             <div class="form-row">
                 <p class="timeperiod">
@@ -68,11 +69,11 @@
 <script >
 
 $(document).ready(function() {
-     $('#clear-form').on('click', function()    {
-        $('.form-row').find('input').val('');
-        $('.result,.statement').html(''); 
-        $('.form-reset').css('margin-top','26%');     
-    });
+    //  $('#clear-form').on('click', function()    {
+    //     $('.form-row').find('input').val('');
+    //     $('.result,.statement').html(''); 
+    //     $('.form-reset').css('margin-top','26%');     
+    // });
     
 });
 
