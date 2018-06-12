@@ -34,11 +34,11 @@ $(function(){
                  $('html, body').animate({scrollTop: $('.wow').offset().top}, 1000);
                  $('.form-reset').css('margin-top','4%');
                   $('.spinimg-hand').addClass('active');
-            }, 510);
+            }, 410);
             setTimeout(function(){               
                  $('.spinimg,.spin-bg').addClass('active');
                
-            }, 500);
+            }, 400);
           
         }
     });
