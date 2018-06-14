@@ -32,11 +32,10 @@ $(function(){
                  $(".result").html(futureVal);
                  $(".statement ").html("<div class='wow'>WOW!</div><div>LOOK AT WHAT<br>YOU CAN MAKE</div>"); 
                  $('.form-reset').css('margin-top','4%');
-                  $('.spinimg-hand').addClass('active');                  
+                $('.spinimg-hand').addClass('active');                  
             }, 300);
             setTimeout(function(){               
-                $('.spinimg,.spin-handle,.spin-bg').addClass('active');
-               
+                $('.spinimg,.spin-handle,.spin-bg').addClass('active');               
             }, 305);
            setTimeout(function(){               
                 $('.spinimg,.spin-handle,.spin-bg').addClass('active');

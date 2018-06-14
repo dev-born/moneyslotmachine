@@ -36,7 +36,7 @@ input[type=number]::-webkit-outer-spin-button {
     vertical-align: middle;
     padding: 2px;
 }
-/*.spin-bg{margin-top: 25px;}*/
+
 .spin-bg.active{margin-top: -30px;}
 .spinimg.active{display:none}
 .spinimg,.spin-bg{display:block}
