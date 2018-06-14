@@ -36,17 +36,22 @@ input[type=number]::-webkit-outer-spin-button {
     vertical-align: middle;
     padding: 2px;
 }
-.spinimg.active,.spin-bg.active{display:none}
+/*.spin-bg{margin-top: 25px;}*/
+.spin-bg.active{margin-top: -30px;}
+.spinimg.active{display:none}
 .spinimg,.spin-bg{display:block}
 .spinimg-hand{display:none; }
-.spinimg-hand.active{display: block;
-       display: block;
+.spin-handle.active{  
+    left: 96%;     
+    top: 10%;
+}
+.spinimg-hand.active{
+    display: block;
+    display: block;
     position: absolute;
-    left: -70px;
-     /*transform: rotateZ(-360deg); */
-    top: -152px;
-    
-     }
+    left: -68px;    
+    top: -183px;    
+    }
     
 .form-row.switch > span {color: #58471a}
 .form-row.switch > span.active {color: #EFB923}

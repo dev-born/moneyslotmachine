@@ -30,23 +30,25 @@ $(function(){
             $("input[name=totalInt]").val(totalInt);  
            setTimeout(function(){
                  $(".result").html(futureVal);
-                 $(".statement ").html("<div class='wow'>WOW!</div><div>LOOK AT WHAT<br>YOU CAN MAKE</div>");              
-                 $('html, body').animate({scrollTop: $('.wow').offset().top}, 1000);
+                 $(".statement ").html("<div class='wow'>WOW!</div><div>LOOK AT WHAT<br>YOU CAN MAKE</div>"); 
                  $('.form-reset').css('margin-top','4%');
-                  $('.spinimg-hand').addClass('active');
-            }, 310);
-            setTimeout(function(){               
-                 $('.spinimg,.spin-bg').addClass('active');
-               
+                  $('.spinimg-hand').addClass('active');                  
             }, 300);
-          
+            setTimeout(function(){               
+                $('.spinimg,.spin-handle,.spin-bg').addClass('active');
+               
+            }, 305);
+           setTimeout(function(){               
+                $('.spinimg,.spin-handle,.spin-bg').addClass('active');
+                $('html, body').animate({scrollTop: $('.wow').offset().top}, 1000);
+            }, 350);
         }
     });
     $('#clear-form').on('click', function()    {
         $('.form-row').find('input').val('');
         $('.result,.statement').html(''); 
         $('.form-reset').css('margin-top','26%');  
-         $('.spinimg,.spinimg-hand,.spin-bg').removeClass('active');   
+         $('.spinimg,.spinimg-hand,.spin-handle,.spin-bg').removeClass('active');   
     });
     
 });
